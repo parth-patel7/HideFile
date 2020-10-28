@@ -6,12 +6,6 @@
 #include <dlfcn.h>
 #include <string.h>
 
-// Name: Parth Patel
-// netID: ptp26
-// RUID: 177003793
-// your code for readdir goes here
-
-
 struct dirent *readdir(DIR *dirp){
 
   //printf("MY FUNCTION IS BEING CALLED");
