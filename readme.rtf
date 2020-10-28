@@ -1,23 +1,7 @@
-{\rtf1\ansi\ansicpg1252\cocoartf1671
-{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fswiss\fcharset0 Helvetica-Oblique;}
-{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red255\green255\blue255;\red34\green45\blue53;
-\red242\green242\blue242;\red230\green0\blue17;}
-{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;\cssrgb\c100000\c100000\c100000;\cssrgb\c17647\c23137\c27059;
-\cssrgb\c96078\c96078\c96078;\cssrgb\c93333\c2353\c7059;}
-\margl1440\margr1440\vieww10800\viewh8400\viewkind0
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\qc\partightenfactor0
+                                                                              HideFile
 
-\f0\fs28 \cf2 HideFile
-\fs24 \
-\
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
-\cf2 Purpose: To hide files in user space by modifying library function that read directory contents.\
-\
-Algorithm: \cb3 \expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec4 Program will interpose\'a0
-\f1\i readdir
-\f0\i0 \'a0so that it will hide a secret file whose name is set by an environment variable. Using\'a0\cb5 \strokec6 LD_PRELOAD\cb3 \strokec4 \'a0and setting environment variable to HIDDEN\
-\
-Testing: Use the makefile to test the program, "make test"\
-\
-}
+Purpose: To hide files in user space by modifying library function that reads directory contents.
+
+Algorithm: Program will interpose as readdir so that it will hide a secret file whose name is set by an environment variable. Using LD_PRELOAD and setting environment variable to HIDDEN
+
+Testing: Use the makefile to test the program, "make test"
